@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="Game_menu">
+<div class="Game_name">Not fight club</div>
+<div class="Setting">
+<img src="./assets/free-icon-home-7133312.png" alt="Icon home">
+<img src="./assets/free-icon-user-7323280.png" alt="Icon user">
+<img src="./assets/free-icon-settings-126472.png" alt="Icon settings">
+</div>
+</div> 
+<div class="Battle_field">
+<div class="Hero">
+<div class="Hero_name">
+<input type="text" id="Name_chr">
+</div>
+<div class="Hero_character_img"></div>
+<div id="Hero_health_bar">
+<div id="Hero_health_bar_full">
+<div id="Hero_health_bar_progress"></div>
+</div>
+</div>
+</div>
+<div class="Attack_defence_zone">
+<div class="Attack_defence_zone_title"></div>
+<div class="Attack_defence_zone_choose">
+<div id="Attack__zone">
+<form>
+<input type="radio" id="Attack_head" name="bodyPart" value="Head">
+<label for="head">Head</label><br>
+<input type="radio" id="Attack_neck" name="bodyPart" value="Neck">
+<label for="neck">Neck</label><br>
+<input type="radio" id="Attack_body" name="bodyPart" value="Body">
+<label for="body">Body</label><br>
+<input type="radio" id="Attack_belly" name="bodyPart" value="Belly">
+<label for="belly">Belly</label><br>
+<input type="radio" id="Attack_legs" name="bodyPart" value="Legs">
+<label for="legs">Legs</label>
+</form>
+</div>
+<div id="Defence_zone">
+<form>
+<input type="radio" id="Defence_head" name="bodyPart" value="Head">
+<label for="head">Head</label><br>
+<input type="radio" id="Defence_neck" name="bodyPart" value="Neck">
+<label for="neck">Neck</label><br>
+<input type="radio" id="Defence_body" name="bodyPart" value="Body">
+<label for="body">Body</label><br>
+<input type="radio" id="Defence_belly" name="bodyPart" value="Belly">
+<label for="belly">Belly</label><br>
+<input type="radio" id="Defence_legs" name="bodyPart" value="Legs">
+<label for="legs">Legs</label>
+</form>
+</div>
+<button id="Start_btn">Attack!</button>
+</div>
+</div>
+<div class="Enemy">
+<div class="Enemy_name">
+<input type="text" id="Name_enemy_chr">
+</div>
+<div class="Enemy_character_img"></div>
+<div id="Enemy_health_bar">
+<div id="Enemy_health_bar_full">
+<div id="Enemy_health_bar_progress"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="Info">
+<div class="Info1"><span class="Hero_name_info"></span> attacked <span class="Enemy_name_info"></span> to <span class="Attack__zone_info"></span> but <span class="Enemy_name_info"></span> was able to protect his <span class="Defence_zone_info"></span></div>
+<div class="Info2"><span class="Enemy_name_info"></span> attacked <span class="Hero_name_info"></span> to <span class="Attack__zone_info"></span> and deal <span id="Damage"></span> </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
